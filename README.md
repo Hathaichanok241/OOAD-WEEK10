@@ -12,3 +12,17 @@ WashingMachine -> user : ShowTime
 
 ```
 <img src = "https://github.com/Hathaichanok241/OOAD-WEEK10/blob/master/Homework/10.1.png?raw=true">
+##เครื่องเก็บค่าทางด่วนอัตโนมัติ
+``` @startuml
+user -> MachineCheckIDCar : StartUseTollway
+user -> MachineCheckIDCar : EndUsetollway
+MachineCheckIDCar -> database : Distance Calculator
+database -> MachineCheckIDCar : senttotalcharges
+Display <- MachineCheckIDCar : totalcharges
+Display -> user : showtotalcharges
+database -> cuttingFundSystem : cuttingfund
+
+@enduml
+
+```
+<img src = "https://github.com/Hathaichanok241/OOAD-WEEK10/blob/master/Homework/10.2.png?raw=true">
