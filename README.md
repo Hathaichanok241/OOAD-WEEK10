@@ -49,3 +49,15 @@ WebDatabase -> user : SHowIncorrect
 
 ```
 <img src ="https://github.com/Hathaichanok241/OOAD-WEEK10/blob/master/Homework/10.4.png?raw=true">
+
+##เครื่องขายตั๋วรถไฟ
+```@startuml
+User -> TicketMachine : ChooseStation
+TicketMachine -> Display : Showcost
+User -> TicketMachine : InsertMoney 
+TicketMachine -> TicketMachine : checkMoney 
+TicketMachine -> User : printTicket
+@enduml
+
+```
+<img src ="https://github.com/Hathaichanok241/OOAD-WEEK10/blob/master/Homework/10.5.png?raw=true">
