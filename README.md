@@ -1,42 +1,14 @@
 # OOAD-WEEK10
 Sequence Diagram
 
-
-README.md 
-md เป็นภาษา Markdown นิยมใช้ใน wiki ของ github 
-
-ตัวอย่างโค้ด
+##เครื่องซักผ้าหยอดเหรียญ
 ```
-# Heading ระดับ 1 
-## Heading ระดับ 2
-### Heading ระดับ 3
- 
+@startuml
+user -> CoinCounting : InsertCoin()
+CoinCounting ->user : returncoin()
+CoinCounting -> WashingMachine : Start()
+WashingMachine -> user : ShowTime
+@enduml 
+
 ```
-
-ผลที่ได้
-# Heading ระดับ 1 
-## Heading ระดับ 2
-### Heading ระดับ 3
-
-
-## Code ภาษาซี
-
-ตัวอย่างโค้ด
-<pre>
-  ``` c
-  #include <stdio.h>
-  Main()
-  {
-     Printf("Hello");
-  }
-  ```
-</pre> 
-ผลที่ได้
-  ``` c
-  #include <stdio.h>
-  Main()
-  {
-     Printf("Hello");
-  }
-  ```
- 
+<img src = "https://github.com/Hathaichanok241/OOAD-WEEK10/blob/master/Homework/10.1.png?raw=true">
