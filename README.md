@@ -26,3 +26,14 @@ database -> cuttingFundSystem : cuttingfund
 
 ```
 <img src = "https://github.com/Hathaichanok241/OOAD-WEEK10/blob/master/Homework/10.2.png?raw=true">
+##ระบบตัดเงินอัตโนมัติ
+```
+@startuml
+database -> bank : senttotalcharges
+bank -> banksystem : checkmoneyfromaccount
+banksystem -> User : SentSMSDon'tHasMoney
+bank <- banksystem : cutmoneyfromaccount
+banksystem -> User : SentSMS
+@enduml
+```
+<img src = "https://github.com/Hathaichanok241/OOAD-WEEK10/blob/master/Homework/10.3.png?raw=true">
